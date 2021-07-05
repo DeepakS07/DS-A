@@ -1,0 +1,13 @@
+class Answer {
+public:
+    string restoreStr(string st, vector<int>& ind) {
+       
+        string out;
+        out.resize(st.size());
+        
+        for(int i = 0; i < ind.size(); ++i) {
+            out[ind[i]] = st[i];
+        }
+        return out;
+    }
+};

@@ -1,0 +1,15 @@
+ class Answer {
+public:
+    int maxWealth(vector<vector<int>>& acc) {
+        int result=INT_MIN;
+        for(int i=0;i<acc.size();i++){
+            int d=0;
+            for(int j:accounts[i]){
+                d+=j;
+            }
+            if(d>res)
+                result=d;
+        }
+        return result;
+    }
+};
