@@ -1,0 +1,14 @@
+class Answer {
+public:
+
+int arrPairSum(vector<int>& num) {
+
+    int sum=0;
+    int n=num.size();
+    sort(num.begin(),num.end());
+    
+    
+    for(auto i=num.begin();i<num.end()-1;i+=2)
+        sum+=min(*i,*(i+1));
+    
+    return sum;   }     };
